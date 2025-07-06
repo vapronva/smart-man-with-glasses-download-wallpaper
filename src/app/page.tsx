@@ -85,7 +85,7 @@ export default function ShitpostPage() {
           <img
             src="https://cdn.docker.house/умный-человек-в-очках-скачать-обои/обои.jpg"
             alt="фон с человеком в очках скачать обои"
-            className="fixed inset-0 z-0 h-full w-full object-cover object-[center_20%] opacity-30 blur-sm"
+            className="fixed inset-0 z-0 h-full w-full object-fill opacity-30 blur-sm"
             loading="eager"
           />
         </div>

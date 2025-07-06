@@ -20,11 +20,19 @@ export function InfoBox() {
       </p>
       <p className="mt-1">
         <Link
+          href="https://github.com/vapronva/smart-man-with-glasses-download-wallpaper"
+          target="_blank"
+          className="text-purple-700 hover:underline"
+        >
+          [исходный код на гитхабе]
+        </Link>{" "}
+        |{" "}
+        <Link
           href="https://gl.vprw.ru/vapronva/smart-man-with-glasses-download-wallpaper"
           target="_blank"
           className="text-purple-700 hover:underline"
         >
-          [исходный код на моём гитлабе]
+          [мой гитлаб]
         </Link>
       </p>
     </div>
