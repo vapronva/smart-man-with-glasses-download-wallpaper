@@ -1,5 +1,7 @@
 /** @type {import("next").NextConfig} */
 const config = {
+  output: "standalone",
+  reactStrictMode: true,
   images: {
     remotePatterns: [new URL("https://cdn.docker.house/**")],
   },

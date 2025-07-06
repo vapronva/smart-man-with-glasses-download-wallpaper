@@ -1,0 +1,49 @@
+stages:
+  - test
+  - build
+  - post-test
+
+include:
+  - component: gl.vprw.ru/ci/sast/sast@1
+  - component: gl.vprw.ru/ci/sast/iac@1
+  - component: gl.vprw.ru/ci/sast/bearer@1
+  - component: gl.vprw.ru/ci/sast/datadog@1
+  - component: gl.vprw.ru/ci/secret-detection/sd@1
+  - component: gl.vprw.ru/ci/dependency-scanning/ds@1
+  - component: gl.vprw.ru/ci/code-quality/codeclimate@1
+  - component: gl.vprw.ru/ci/docker/build-buildah@3
+    inputs:
+      job_name: build container image
+      job_name_manifest: push manifest
+      ci_image_name: web
+      ci_image_tags: latest
+      dockerfile_path: Dockerfile
+      build_args: --secret id=SENTRY_AUTH_TOKEN,type=env
+  - component: gl.vprw.ru/ci/container-scanning/cs@1
+    inputs:
+      job_name: container scanning (latest)
+      default_branch_image: $CI_REGISTRY_IMAGE/web:latest
+      application_repository: $CI_REGISTRY_IMAGE/web
+      application_tag: latest
+
+.build rules for frontend: &build-rules-frontend
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+lint + check:
+  stage: test
+  <<: *build-rules-frontend
+  image: docker-registry.selectel.ru/library/node:24-alpine
+  script:
+    - npm install --global pnpm@10
+    - pnpm install
+    - pnpm run check
+
+build container image:
+  <<: *build-rules-frontend
+
+push manifest:
+  <<: *build-rules-frontend
+
+container scanning (latest):
+  <<: *build-rules-frontend
