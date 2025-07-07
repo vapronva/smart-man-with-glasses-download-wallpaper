@@ -1,66 +1,82 @@
-const randomTexts = [
+"use client";
+
+import { useMemo } from "react";
+
+interface TextItem {
+  text: string;
+  style: {
+    top: string;
+    left: string;
+    fontSize: string;
+    transform: string;
+    color: string;
+  };
+  animation: string;
+}
+
+const baseTexts = [
   {
     text: "ПОБЕДА",
-    style: {
+    baseStyle: {
       top: "10%",
       left: "5%",
       fontSize: "8rem",
-      transform: "rotate(-15deg)",
+      rotation: -15,
       color: "#ff00ff",
     },
     animation: "animate-float",
   },
   {
     text: "гений",
-    style: {
+    baseStyle: {
       top: "70%",
       left: "15%",
       fontSize: "6rem",
-      transform: "rotate(10deg)",
+      rotation: 10,
       color: "#00ffff",
     },
     animation: "animate-pulse",
   },
   {
     text: "скачать",
-    style: {
+    baseStyle: {
       top: "50%",
       left: "80%",
       fontSize: "7rem",
-      transform: "rotate(5deg)",
+      rotation: 5,
       color: "#ffff00",
     },
     animation: "animate-shake",
   },
   {
     text: "обои",
-    style: {
+    baseStyle: {
       top: "20%",
       left: "60%",
       fontSize: "9rem",
-      transform: "rotate(-5deg)",
+      rotation: -5,
       color: "#00ff00",
     },
     animation: "animate-text-flicker",
   },
   {
     text: "УЛЬТРАЗВУК",
-    style: {
+    baseStyle: {
       top: "85%",
       left: "40%",
       fontSize: "5rem",
-      transform: "rotate(-8deg)",
+      rotation: -8,
       color: "#ff3300",
     },
     animation: "animate-pulse-deep",
   },
   {
     text: "ПОБЕДА",
-    style: {
+    baseStyle: {
       top: "5%",
       left: "75%",
       fontSize: "10rem",
-      transform: "rotate(20deg)",
+      rotation: 20,
       color: "#3333ff",
     },
     animation: "animate-float",
@@ -68,6 +84,19 @@ const randomTexts = [
 ];
 
 export function ChaoticBackgroundText() {
+  const randomTexts = useMemo<TextItem[]>(() => {
+    return baseTexts.map((item) => ({
+      text: item.text,
+      style: {
+        top: item.baseStyle.top,
+        left: item.baseStyle.left,
+        fontSize: item.baseStyle.fontSize,
+        transform: `rotate(${item.baseStyle.rotation}deg)`,
+        color: item.baseStyle.color,
+      },
+      animation: item.animation,
+    }));
+  }, []);
   return (
     <div className="pointer-events-none absolute inset-0 z-10 overflow-hidden">
       {randomTexts.map((item, index) => (

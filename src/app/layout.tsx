@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   icons: [
     {
       rel: "icon",
-      url: "https://cdn.docker.house/умный-человек-в-очках-скачать-обои/умный-человек-в-очках-скачать-обои-аватар-для-gitlab-проекта-вебсайт-на-nextjs-я-хочу-сосать-реакт-больше-спасибо-т3-за-такое.jpg",
+      url: "https://cdn.docker.house/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/%D1%83%D0%BC%D0%BD%D1%8B%D0%B8%CC%86-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8-%D0%B0%D0%B2%D0%B0%D1%82%D0%B0%D1%80-%D0%B4%D0%BB%D1%8F-gitlab-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-%D0%B2%D0%B5%D0%B1%D1%81%D0%B0%D0%B8%CC%86%D1%82-%D0%BD%D0%B0-nextjs-%D1%8F-%D1%85%D0%BE%D1%87%D1%83-%D1%81%D0%BE%D1%81%D0%B0%D1%82%D1%8C-%D1%80%D0%B5%D0%B0%D0%BA%D1%82-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-%D1%81%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE-%D1%823-%D0%B7%D0%B0-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5.jpg",
       sizes: "512x512",
     },
   ],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "веб-сайт в сети интернет для умный человек в очках скачать обои",
     images: [
       {
-        url: "https://cdn.docker.house/умный-человек-в-очках-скачать-обои/умный-человек-в-очках-скачать-обои-аватар-для-gitlab-проекта-вебсайт-на-nextjs-я-хочу-сосать-реакт-больше-спасибо-т3-за-такое.jpg",
+        url: "https://cdn.docker.house/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/%D1%83%D0%BC%D0%BD%D1%8B%D0%B8%CC%86-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8-%D0%B0%D0%B2%D0%B0%D1%82%D0%B0%D1%80-%D0%B4%D0%BB%D1%8F-gitlab-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-%D0%B2%D0%B5%D0%B1%D1%81%D0%B0%D0%B8%CC%86%D1%82-%D0%BD%D0%B0-nextjs-%D1%8F-%D1%85%D0%BE%D1%87%D1%83-%D1%81%D0%BE%D1%81%D0%B0%D1%82%D1%8C-%D1%80%D0%B5%D0%B0%D0%BA%D1%82-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-%D1%81%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE-%D1%823-%D0%B7%D0%B0-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5.jpg",
         width: 512,
         height: 512,
       },
