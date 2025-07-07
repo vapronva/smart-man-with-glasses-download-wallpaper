@@ -5,8 +5,8 @@
 
 @theme {
   --breakpoint-2xl: 1400px;
-  --font-impact: "Impact", sans-serif;
-  --font-comic-sans: "Comic Sans MS", cursive, sans-serif;
+  --font-impact: var(--font-family-impact), sans-serif;
+  --font-comic-sans: var(--font-family-comic-sans), cursive;
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
   --animate-marquee: marquee 60s linear infinite;

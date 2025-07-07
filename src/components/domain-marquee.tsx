@@ -11,7 +11,7 @@ const DOMAINS = [
   "умныйчеловеквочкахпобеда.рф",
 ];
 
-const marqueeDomains = [...DOMAINS, ...DOMAINS];
+const marqueeDomains = [...DOMAINS, ...DOMAINS].sort(() => Math.random() - 0.5);
 
 export function DomainMarquee() {
   return (

@@ -1,4 +1,5 @@
 import { type Metadata } from "next";
+import localFont from "next/font/local";
 
 import "~/styles/globals.css";
 
@@ -27,11 +28,35 @@ export const metadata: Metadata = {
   },
 };
 
+const Impact = localFont({
+  src: [
+    {
+      path: "../../public/fonts/impact/impact.woff2",
+    },
+  ],
+  style: "normal",
+  preload: true,
+  variable: "--font-family-impact",
+  fallback: ["Impact", "sans-serif"],
+});
+
+const ComicSans = localFont({
+  src: [
+    {
+      path: "../../public/fonts/comic-sans/comic-sans-ms.woff2",
+    },
+  ],
+  style: "normal",
+  preload: true,
+  variable: "--font-family-comic-sans",
+  fallback: ["Comic Sans MS", "Comic Sans", "cursive"],
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ru">
+    <html lang="ru" className={`${Impact.variable} ${ComicSans.variable}`}>
       <body>{children}</body>
     </html>
   );

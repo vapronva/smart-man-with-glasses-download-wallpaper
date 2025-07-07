@@ -21,6 +21,7 @@ ENV NODE_ENV=production
 
 COPY --from=builder /usr/src/app/.next/standalone ./
 COPY --from=builder /usr/src/app/.next/static ./.next/static
+COPY --from=builder /usr/src/app/public ./public
 
 EXPOSE 3000
 
