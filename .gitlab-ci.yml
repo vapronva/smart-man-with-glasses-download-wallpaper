@@ -11,7 +11,6 @@ include:
   - component: gl.vprw.ru/ci/sast/datadog@1
   - component: gl.vprw.ru/ci/secret-detection/sd@1
   - component: gl.vprw.ru/ci/dependency-scanning/ds@1
-  - component: gl.vprw.ru/ci/code-quality/codeclimate@1
   - component: gl.vprw.ru/ci/docker/build-buildah@3
     inputs:
       job_name: build container image
