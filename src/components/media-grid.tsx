@@ -63,7 +63,7 @@ export function MediaGrid() {
   }, []);
   return (
     <div className="absolute right-2 bottom-2 z-20 grid w-32 grid-cols-1 gap-1 sm:w-48 sm:grid-cols-2 sm:gap-2 md:right-4 md:bottom-4 md:w-64 md:grid-cols-2 lg:w-200 lg:grid-cols-3">
-      {mediaWithTransforms.map((media, index) => (
+      {mediaWithTransforms.map((media, _index) => (
         <Dialog key={media.src.h264}>
           <DialogTrigger asChild>
             <div

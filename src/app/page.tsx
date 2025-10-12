@@ -15,7 +15,7 @@ interface Position {
 }
 
 export default function ShitpostPage() {
-  const [showWallpaperButton, setShowWallpaperButton] = useState(true);
+  const [showWallpaperButton] = useState(true);
   const imageRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
@@ -87,6 +87,7 @@ export default function ShitpostPage() {
       </header>
       <main className="relative flex flex-grow items-center justify-center p-4">
         <div className="animate-pulse-deep absolute inset-0 z-0 flex items-center justify-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://cdn.docker.house/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/%D0%BE%D0%B1%D0%BE%D0%B8.jpg"
             alt="фон с человеком в очках скачать обои"
@@ -119,6 +120,7 @@ export default function ShitpostPage() {
             }}
             onMouseDown={handleMouseDown}
           >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="https://cdn.docker.house/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/%D0%BE%D0%B1%D0%BE%D0%B8.jpg"
               alt="умный человек в очках скачать обои смотрит на тебя"
