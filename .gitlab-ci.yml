@@ -33,7 +33,7 @@ include:
 lint + check:
   stage: test
   <<: *build-rules-frontend
-  image: docker-registry.selectel.ru/library/node:24-alpine
+  image: docker-registry.selectel.ru/library/node:25-alpine
   script:
     - npm install --global pnpm@10
     - pnpm install
