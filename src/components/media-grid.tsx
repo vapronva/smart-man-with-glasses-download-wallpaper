@@ -15,8 +15,8 @@ import {
 const mediaFiles = [
   {
     src: {
-      h265: "https://cdn.docker.house/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/rferee/blender-animations/h265/screencast-2025_07_05-20_56_04.mp4",
-      h264: "https://cdn.docker.house/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/rferee/blender-animations/h264/screencast-2025_07_05-20_56_04.mp4",
+      h265: "https://cdn.engineering/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/rferee/blender-animations/h265/screencast-2025_07_05-20_56_04.mp4",
+      h264: "https://cdn.engineering/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/rferee/blender-animations/h264/screencast-2025_07_05-20_56_04.mp4",
     },
     title: "Кубический умный человек в очках скачать обои окунулся в Debian",
     author: "rferee",
@@ -25,8 +25,8 @@ const mediaFiles = [
   },
   {
     src: {
-      h265: "https://cdn.docker.house/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/rferee/blender-animations/h265/screencast-2025_07_05-21_15_58.mp4",
-      h264: "https://cdn.docker.house/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/rferee/blender-animations/h264/screencast-2025_07_05-21_15_58.mp4",
+      h265: "https://cdn.engineering/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/rferee/blender-animations/h265/screencast-2025_07_05-21_15_58.mp4",
+      h264: "https://cdn.engineering/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/rferee/blender-animations/h264/screencast-2025_07_05-21_15_58.mp4",
     },
     title: "Сферический умный человек в очках скачать обои взорвался",
     author: "rferee",
@@ -35,8 +35,8 @@ const mediaFiles = [
   },
   {
     src: {
-      h265: "https://cdn.docker.house/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/rferee/blender-animations/h265/screencast-2025_07_05-21_19_06.mp4",
-      h264: "https://cdn.docker.house/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/rferee/blender-animations/h264/screencast-2025_07_05-21_19_06.mp4",
+      h265: "https://cdn.engineering/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/rferee/blender-animations/h265/screencast-2025_07_05-21_19_06.mp4",
+      h264: "https://cdn.engineering/%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B2-%D0%BE%D1%87%D0%BA%D0%B0%D1%85-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BE%D0%B8/rferee/blender-animations/h264/screencast-2025_07_05-21_19_06.mp4",
     },
     title:
       "проблема стола, куба, debian и умного человека в очках скачать обои",
