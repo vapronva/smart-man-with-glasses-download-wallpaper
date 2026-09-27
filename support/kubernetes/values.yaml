@@ -1,0 +1,63 @@
+---
+nameOverride: smartmanwithglasses
+fullnameOverride: smartmanwithglasses-vprw
+
+deployment:
+  containers:
+    - name: frontend
+      image:
+        registry: docker.horse
+        repository: vapronva/smart-man-with-glasses-download-wallpaper/web
+        tag: latest
+      ports:
+        - name: http
+          containerPort: 3000
+          protocol: TCP
+  affinity:
+    nodeAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+        - weight: 1
+          preference:
+            matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                  - converted-conduit
+
+services:
+  - name: smartmanwithglasses-http
+    type: ClusterIP
+    ports:
+      - name: http
+        port: 3000
+        targetPort: http
+        protocol: TCP
+
+ckic:
+  enabled: true
+  sites:
+    - hosts:
+        - xn--80aaaebatb6abobbhmquefb1dzaf5dxbig8g3b.xn--p1ai
+        - xn--------6vebakcb7ab5cbudcjqv0aghb5e4ag8e3bkh4iqc.xn--p1ai
+        - xn--80aad2ag0absm2c3c.xn--p1ai
+        - xn----7sbaf9ah5abun7c6c.xn--p1ai
+        - xn--80aaaaeacaxcbg1bfsbblquyefbbz0c5al7e8big2j7b.xn--p1ai
+        - xn--80adakbvkbehlpe3d1bvi5d.xn--p1ai
+        - xn------8cdhbsb6aodfjotg5e9bzak4e.xn--p1ai
+        - xn--80aaccaocbd7aobilptecs0evc7ai9f.xn--p1ai
+        - xn--b1afbnideim8b8b6b.xn--p1ai
+        - xn----dtbibqkeejo2cyc8b.xn--p1ai
+        - xn--80adakb4abd1ae3fni.xn--p1ai
+        - xn-----8kcfbpb4bdd7ag7gpk.xn--p1ai
+        - xn-------63dbajbb4ab2csdch8cghb3d0a0eubkh6l.xn--p1ai
+        - xn--80aaaebatb6aobbg6befb2cwa9c5aig6j.xn--p1ai
+        - smartguywithglasses.ru
+        - smart-guy-with-glasses.ru
+        - smart-man-with-glasses.ru
+        - smartmanwithglasses.ru
+        - smartmanwithglassesdownloadwallpaper.ru
+        - smart-man-with-glasses-download-wallpaper.ru
+        - xn--80adakbvkbehlpe3d1bvi5d.xn--80aad2ag0absm2c3c.xn--p1ai
+        - xn------8cdhbsb6aodfjotg5e9bzak4e.xn----7sbaf9ah5abun7c6c.xn--p1ai
+      upstream: smartmanwithglasses-http:3000
+      robotsTag: "index, archive, nofollow"

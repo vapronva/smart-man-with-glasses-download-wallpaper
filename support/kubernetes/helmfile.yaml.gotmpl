@@ -1,0 +1,25 @@
+---
+missingFileHandler: Error
+
+helmDefaults:
+  wait: true
+  timeout: 600
+  force: false
+  createNamespace: true
+  atomic: true
+  historyMax: 10
+
+repositories:
+  - name: cmld
+    url: {{ env "CHART_REPO_URL" | default (printf "%s/api/v4/projects/149/packages/helm/stable" (requiredEnv "CI_SERVER_URL")) }}
+
+releases:
+  - name: smartmanwithglasses-vprw
+    namespace: smartmanwithglasses-vprw
+    chart: cmld/app-release
+    version: {{ env "CHART_VERSION" | default "3.0.0" }}
+    values:
+      - values.yaml
+    set:
+      - name: deployment.containers[0].image.tag
+        value: {{ requiredEnv "CI_COMMIT_SHA" }}

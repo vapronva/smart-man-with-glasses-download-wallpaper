@@ -7,7 +7,7 @@ const config = {
   },
 };
 
-import { withSentryConfig } from "@sentry/nextjs";
+import { withSentryConfig } from "@sentry/nextjs/config";
 
 export default withSentryConfig(config, {
   org: "cmld",
@@ -19,5 +19,7 @@ export default withSentryConfig(config, {
   reactComponentAnnotation: {
     enabled: true,
   },
-  disableLogger: true,
+  bundleSizeOptimizations: {
+    excludeDebugStatements: true,
+  },
 });
