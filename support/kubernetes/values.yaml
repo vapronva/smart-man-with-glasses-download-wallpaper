@@ -22,7 +22,7 @@ deployment:
               - key: kubernetes.io/hostname
                 operator: In
                 values:
-                  - converted-conduit
+                  - unnecessary-addition
 
 services:
   - name: smartmanwithglasses-http
