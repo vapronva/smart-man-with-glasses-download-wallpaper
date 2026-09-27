@@ -1,13 +1,9 @@
+import { withSentryConfig } from "@sentry/nextjs/config";
+
 /** @type {import("next").NextConfig} */
 const config = {
   output: "standalone",
-  reactStrictMode: true,
-  images: {
-    remotePatterns: [new URL("https://cdn.engineering/**")],
-  },
 };
-
-import { withSentryConfig } from "@sentry/nextjs/config";
 
 export default withSentryConfig(config, {
   org: "cmld",
@@ -15,7 +11,6 @@ export default withSentryConfig(config, {
   sentryUrl: "https://sentry.cumlord.ru/",
   silent: !process.env.CI,
   widenClientFileUpload: true,
-  tunnelRoute: "/skachat-oboi",
   reactComponentAnnotation: {
     enabled: true,
   },

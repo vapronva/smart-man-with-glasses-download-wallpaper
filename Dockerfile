@@ -45,8 +45,6 @@ COPY --from=builder --chown=node:node /usr/src/app/.next/standalone ./
 
 COPY --from=builder --chown=node:node /usr/src/app/.next/static ./.next/static
 
-COPY --from=builder --chown=node:node /usr/src/app/public ./public
-
 USER node
 
 EXPOSE 3000
