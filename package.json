@@ -1,6 +1,6 @@
 {
   "name": "umniy-chelovek-v-ochkah-skachat-oboi",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "private": true,
   "type": "module",
   "scripts": {
@@ -18,16 +18,16 @@
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.23",
     "@sentry/nextjs": "^11.1.0",
-    "import-in-the-middle": "^3.5.1",
+    "import-in-the-middle": "^3.5.2",
     "lucide-react": "^1.49.0",
-    "next": "^16.3.7",
+    "next": "^16.3.8",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "require-in-the-middle": "^8.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@next/eslint-plugin-next": "^16.3.7",
+    "@next/eslint-plugin-next": "^16.3.8",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^26.6.3",
     "@types/react": "^19.3.0",
